@@ -1,0 +1,16 @@
+/* src/pages/Tab2.css - My Closet page styles */
+
+ion-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+ion-label {
+  display: block;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 4px;
+  color: var(--ion-color-medium);
+}

@@ -1,0 +1,118 @@
+/* Girly 90s Pink + Vaporwave Mix */
+:root {
+  --ion-color-primary: #ff1493;           /* Deep pink title bar */
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-secondary: #ff69b4;         /* Hot pink accents */
+  --ion-color-tertiary: #ff00ff;          /* Bright magenta */
+  --ion-color-light: #ffc0cb;             /* Light pink panels */
+  --ion-color-medium: #ffb6e1;
+  --ion-color-dark: #4a0e4e;              /* Dark purple text */
+
+  --ion-background-color: #ff69b4;        /* Hot pink background */
+  --ion-text-color: #4a0e4e;              /* Dark purple text */
+  --ion-toolbar-background: #ff1493;
+  --ion-toolbar-color: #ffffff;
+  --ion-toolbar-border-color: #ffffff;
+  --ion-background-gradient: linear-gradient(135deg, #ff69b4 0%, #ffb6e1 50%, #9370db 100%);
+}
+
+/* 3D raised effect everywhere - girly pink version */
+ion-card, div[style*="border"], ion-button {
+  border: 2px outset #ffb6e1 !important;
+  border-bottom-color: #ff69b4 !important;
+  border-right-color: #ff69b4 !important;
+  background: #ffc0cb !important;
+  box-shadow: 4px 4px 0 #ff1493 !important;
+}
+
+/* Pixel font & effects */
+* {
+  font-family: 'MS Sans Serif', 'Comic Sans MS', sans-serif !important;
+  font-size: 14px !important;
+}
+
+ion-img {
+  image-rendering: pixelated;
+  border: 3px inset #ffffff;
+}
+
+/* Tab bar like Win95 taskbar */
+ion-tab-bar {
+  background: #ffc0cb;
+  border-top: 4px solid #ff1493;
+  height: 58px;
+}
+
+ion-tab-button.selected {
+  background: #ff1493;
+  color: #ffffff !important;
+}
+* {
+  font-family: 'VT323', 'Press Start 2P', 'Comic Sans MS', monospace !important;
+  font-size: 16px !important; /* bigger for retro readability */
+}
+ion-content {
+  --background: var(--ion-background-gradient, linear-gradient(135deg, #ff69b4 0%, #ffb6e1 50%, #9370db 100%)) !important;
+  background: var(--ion-background-gradient, linear-gradient(135deg, #ff69b4 0%, #ffb6e1 50%, #9370db 100%)) !important;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    var(--ion-background-gradient, linear-gradient(135deg, #ff69b4 0%, #ffb6e1 50%, #9370db 100%)) !important;
+  background-size: 40px 40px, 40px 40px, 100% 100% !important;
+  background-attachment: fixed;
+}
+
+ion-page {
+  background: transparent !important;
+}
+
+.retro-loading {
+  --background: rgba(255, 20, 147, 0.9);
+  --spinner-color: #ffb6e1;
+  font-family: 'Press Start 2P', monospace !important;
+  animation: glitch 1.5s infinite;
+}
+
+/* Girly button styling */
+ion-button {
+  --color: #ffffff !important;
+  --background: #ff1493 !important;
+  border-radius: 15px !important;
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+}
+
+ion-button[fill="outline"] {
+  --border-color: #ff69b4 !important;
+  --color: #ff1493 !important;
+}
+
+/* Girly card styling */
+ion-card {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border: 3px solid #ff69b4 !important;
+  border-radius: 20px !important;
+  box-shadow: 0 8px 20px rgba(255, 20, 147, 0.3) !important;
+}
+
+/* Girly input styling */
+ion-input, ion-select {
+  --background: rgba(255, 255, 255, 0.9) !important;
+  --border-color: #ff69b4 !important;
+  border-radius: 10px !important;
+}
+
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-3px, 3px); }
+  40% { transform: translate(3px, -3px); }
+  60% { transform: translate(-3px, 3px); }
+  80% { transform: translate(3px, -3px); }
+  100% { transform: translate(0); }
+}
+
+@keyframes girlyGlow {
+  0%, 100% { text-shadow: 0 0 10px rgba(255, 20, 147, 0.5); }
+  50% { text-shadow: 0 0 20px rgba(255, 105, 180, 0.8); }
+}
